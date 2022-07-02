@@ -16,21 +16,21 @@ import {
 } from "./InfoElements";
 
 const InfoSection = ({
-  lightBg,
-  imgStart,
-  topLine,
-  lightText,
-  darkText,
-  headline,
-  description,
-  buttonLabel,
-  id,
-  alt,
-  img,
-  primary,
-  dark,
-  dark2,
-}) => {
+    lightBg,
+    imgStart,
+    topLine,
+    lightText,
+    darkText,
+    headline,
+    description,
+    buttonLabel,
+    id,
+    alt,
+    img,
+    primary,
+    dark,
+    dark2,
+  }) => {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -64,6 +64,8 @@ const InfoSection = ({
                 <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
+            
+            
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
