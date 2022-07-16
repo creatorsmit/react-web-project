@@ -53,7 +53,7 @@ const InfoSection = ({
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
                   >
-                  {buttonLabel}
+                    {buttonLabel}
                   </Button>
                 </BtnWrap>
               </TextWrapper>

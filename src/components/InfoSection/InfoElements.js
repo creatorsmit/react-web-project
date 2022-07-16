@@ -1,12 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
-    color: #fff;
-    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  color: #fff;
+  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+  
 
-
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     padding: 100px 0;
+  }
 `;
 
 export const InfoWrapper = styled.div`
@@ -26,11 +27,11 @@ export const InfoRow = styled.div`
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
+    (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+    (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
   }
 `;
 
@@ -71,7 +72,7 @@ export const Heading = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
-  } ;
+  }
 `;
 
 export const Subtitle = styled.p`

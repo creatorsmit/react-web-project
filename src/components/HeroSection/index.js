@@ -14,6 +14,7 @@ import {
 } from "./HeroElements";
 
 const HeroSection = () => {
+
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -30,17 +31,21 @@ const HeroSection = () => {
         <HeroH1>Virtual Banking Made Easy</HeroH1>
 
         <HeroP>
-          Sign up for a new account today and reiceive $250 in creadit towards
-          your next payment.
+          Sign up for a new account today and reiceive $250 in creadit towards your next payment.
         </HeroP>
 
         <HeroBtnWrapper>
           <Button
-            to="singup"
+            to='signup'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
             dark="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
           >
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
